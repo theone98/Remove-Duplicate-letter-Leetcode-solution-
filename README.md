@@ -9,5 +9,6 @@ we can pop the last character to get a smaller result.
 
 
 # Time Complexity:  
-Time O(N)  
-Space O(26)
+We loop for n times so Time complexity will be O(N)  
+# Space Complexity:  
+Space O(26),No vaiable space was used
