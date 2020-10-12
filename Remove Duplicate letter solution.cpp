@@ -9,10 +9,10 @@ public:
         for (int i = 0; i < n; ++i) {
             if (vis[s[i] - 'a']++) continue;
             while (!ans.empty() && ans.back() > s[i] && i < last[ans.back() - 'a'])
-                vis[res.back() - 'a'] = 0, res.pop_back();
-            res.push_back(s[i]);
+                vis[ans.back() - 'a'] = 0, ans.pop_back();
+            ans.push_back(s[i]);
         }
-        return res;
+        return ans;
 
     }
 };
